@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Gilory font */
+  @font-face {
+    font-family: "Gilory";
+    src: url("/fonts/Gilory/Gilory-ExtraBold.otf");
+    font-weight: 800;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilory";
+    src: url("/fonts/Gilory/Gilory-Light.otf");
+    font-weight: 300;
+    font-display: swap;
+  }
+
+  /* Apparel font */
+  @font-face {
+    font-family: "Apparel";
+    src: url("/fonts/Apparel/Apparel Black.ttf");
+    font-weight: 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel";
+    src: url("/fonts/Apparel/Apparel Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel";
+    src: url("/fonts/Apparel/Apparel Light.ttf");
+    font-weight: 300;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel";
+    src: url("/fonts/Apparel/Apparel Regular.ttf");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel";
+    src: url("/fonts/Apparel/Apparel Thin.ttf");
+    font-weight: 100;
+    font-display: swap;
+  }
+
+  /* Apparel Display font */
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Black.ttf");
+    font-weight: 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Light.ttf");
+    font-weight: 300;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Regular.ttf");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Thin.ttf");
+    font-weight: 100;
+    font-display: swap;
+  }
+
+  /* Apparel Display It font */
+  @font-face {
+    font-family: "Apparel Display It";
+    src: url("/fonts/Apparel/Apparel Display Black It.ttf");
+    font-weight: 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Bold It.ttf");
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Light It.ttf");
+    font-weight: 300;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Regular It.ttf");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Apparel Display";
+    src: url("/fonts/Apparel/Apparel Display Thin It.ttf");
+    font-weight: 100;
+    font-display: swap;
+  }
+
+  a {
+    @apply transition-all duration-500 hover:scale-110;
+  }
+}
+
+@layer utilities {
+  .hero-height {
+    height: "100vh - 80px";
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scroll-text {
+    animation: scroll-text 15s infinite linear;
+  }
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
